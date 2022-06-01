@@ -38,7 +38,7 @@ class DashboardViewControllerTests: XCTestCase {
         self.viewController?.presenterDelegate?.fetchNewsData()
         self.headlinesTickerExpectation = expectation(description: "Headlines")
         waitForExpectations(timeout: 20)
-        let cell = self.viewController?.collectionView(self.viewController?.collectionView ?? UICollectionView(), cellForItemAt: IndexPath.init(item: 0, section: 0)) as? HeadlinesCollectionViewCell
+        let cell = self.viewController?.collectionView.cellForItem(at: IndexPath.init(item: 0, section: 0)) as? HeadlinesCollectionViewCell
         let newsTitle = "'God needs to come and explain it': How the football world reacted to Real Madrid's extraordinary Champions League semifinal victory"
         XCTAssert(cell?.newsTitleLabel.text == newsTitle, "The news title should match with \(newsTitle)")
     }
@@ -51,7 +51,6 @@ class DashboardViewControllerTests: XCTestCase {
         let newsTitle = "Rock climbing brings unexpected benefits"
         XCTAssert(cell?.newsTitleLabel.text == newsTitle, "The news title should match with \(newsTitle)")
     }
-    
 }
 
 extension DashboardViewControllerTests: DashboardInputDelegate {
