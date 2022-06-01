@@ -1,0 +1,20 @@
+PODS:
+  - Kingfisher (7.2.2)
+  - SwiftCSV (0.6.1)
+
+DEPENDENCIES:
+  - Kingfisher
+  - SwiftCSV
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - SwiftCSV
+
+SPEC CHECKSUMS:
+  Kingfisher: 184d4d1a8c36666e663caf8e08abe87898595c53
+  SwiftCSV: f0108ec3e85c69ca7d7707645a4d044a222dc10c
+
+PODFILE CHECKSUM: 9a0b69092037b24a4413f01e577dfe9c0f628691
+
+COCOAPODS: 1.11.3

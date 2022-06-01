@@ -1,0 +1,12 @@
+.DS_Store
+Pods/
+
+## Build generated
+build/
+DerivedData/
+*.xcbkptlist
+*.xcuserstate
+*.xcworkspace/
+*.xcodeproj/xcuserdata/
+xcuserdata/
+SampleApp.xcodeproj/xcuserdata/
